@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@iconify-json/ic": "^1.1.18",
+    "@iconify-json/mdi": "^1.1.68",
+    "@nuxt/icon": "^1.4.5",
+    "html": "^1.0.0",
+    "nuxt": "^3.12.4",
+    "nuxt-icon": "^1.0.0-beta.7",
+    "vue": "latest"
+  }
+}

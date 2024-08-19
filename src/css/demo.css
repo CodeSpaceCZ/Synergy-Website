@@ -1,0 +1,66 @@
+:root {
+	--site-padding: 40px;
+}
+
+@media screen and (max-width: 700px) {
+	:root {
+		--site-padding: 20px;
+	}
+}
+
+html {background: var(--synergy-site-bg);}
+html, body {color: var(--synergy-text-color); font-family: Cantarell, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Open Sans, Helvetica Neue, Arial, Noto Sans, Roboto, sans-serif; font-size: 18px; margin: 0;}
+
+*, *::before, *::after {box-sizing: border-box;}
+
+:is(header, section, footer, nav) > .inner {margin: 70px auto; padding: 0 var(--site-padding); max-width: 1000px;}
+
+nav {background: var(--synergy-tab-highlight); border-bottom: var(--synergy-border-width) solid var(--synergy-border); overflow: hidden;}
+nav > .inner {margin: 15px auto; display: flex; gap: 25px; flex-wrap: wrap; align-items: center;}
+nav a {text-decoration: none;}
+nav svg {max-height: 33px;}
+
+.logo {max-width: 200px;}
+
+.sec-bg {background-color: var(--synergy-tab-highlight); padding: .1px; border: var(--synergy-border-width) solid var(--synergy-border); border-right-width: 0; border-left-width: 0;}
+
+.settings {display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;}
+.settings > * {position: sticky; top: 0;}
+.settings h2 {text-align: center;}
+.settings > * > :first-child {margin-top: 0;}
+.settings .variables {display: grid; gap: 10px 20px; align-items: center; grid-template-columns: max-content 1fr;}
+.settings .variables > * {display: flex; gap: 10px; align-items: center;}
+
+.settings .presets {display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;}
+.settings .presets > * {display: flex; border-radius: 10px; overflow: hidden; cursor: pointer; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);}
+.settings .presets > * > * {height: 100px; flex: 1;}
+
+.settings .components .item {margin-bottom: 10px;}
+.settings .components .btn-row {margin-top: 15px;}
+.settings .components .box {margin-top: 15px; background-color: var(--synergy-bg); border: var(--synergy-border-width) solid var(--synergy-border); padding: 15px; border-radius: var(--synergy-border-radius);}
+.settings .components .btn small {display: block; font-weight: 400; font-size: 11px; margin-top: 3px;}
+.settings .components .export .btn-row {margin: 15px 0;}
+
+@media screen and (max-width: 850px) {
+	.settings {display: flex; flex-direction: column-reverse; align-items: normal;}
+	.settings > * {position: static;}
+}
+
+@media screen and (max-width: 500px) {
+	.settings .variables {display: block;}
+	.settings .variables label {margin: 20px 0 10px;}
+}
+
+.form {display: flex; flex-direction: column; gap: 15px; max-width: 450px;}
+.form > * {margin: 0;}
+
+.colori {aspect-ratio: 1 / 1; height: 36px; border-radius: var(--synergy-border-radius);}
+
+a {color: inherit;}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+
+code:not(.hljs) {font-size: .9em; background-color: #aaa2; padding: 3px 5px; border-radius: var(--synergy-border-radius);}
+
+.text-center {text-align: center;}
