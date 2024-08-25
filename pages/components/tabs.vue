@@ -41,11 +41,11 @@
 			<Example>
 				<div class="tabs tabs-no-padding">
 					<label>
-						<input type="radio" name="tabs2" checked>
+						<input type="radio" name="tabs3" checked>
 						<div>Tab 1</div>
 					</label>
 					<label>
-						<input type="radio" name="tabs2">
+						<input type="radio" name="tabs3">
 						<div>Tab 2</div>
 					</label>
 				</div>
