@@ -19,3 +19,15 @@
 
 	</div>
 </template>
+
+<script setup lang="ts">
+
+import { genMeta } from "~/src/ts/Meta";
+
+useHead(genMeta({
+	title: "Synergy",
+	desc: "Simple framework with CSS-only UI components.",
+	use_title_suffix: false
+}));
+
+</script>

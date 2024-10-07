@@ -33,3 +33,13 @@
 		</div>
 	</section>
 </template>
+
+<script setup lang="ts">
+
+import { genMeta } from "~/src/ts/Meta";
+
+useHead(genMeta({
+	title: "Select"
+}));
+
+</script>

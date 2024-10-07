@@ -16,7 +16,14 @@
 	</section>
 </template>
 
+
 <script setup lang="ts">
+
+import { genMeta } from "~/src/ts/Meta";
+
+useHead(genMeta({
+	title: "Components"
+}));
 
 let components = [
 	{url: "button", title: "Button", icon: "mdi:button-cursor"},
