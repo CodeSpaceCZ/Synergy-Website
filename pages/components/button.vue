@@ -27,7 +27,7 @@
 
 			<Example selector=".btn-row" :inner="true">
 				<div class="btn-row">
-					<button class="btn btn btn-rounded btn-primary">Primary</button>
+					<button class="btn btn-rounded btn-primary">Primary</button>
 					<button class="btn btn-rounded">Secondary</button>
 				</div>
 			</Example>
